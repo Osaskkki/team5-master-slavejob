@@ -7,6 +7,7 @@ pipeline{
       steps{
         sh 'free -g'
     }
+    }
     stage('parallel-job'){
       parallel{
         stage('sub-job1'){
